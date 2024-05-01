@@ -1,0 +1,162 @@
+body {
+    font-family: 'Space Mono', monospace; /* Typewriter-style font */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+.darkroom-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.darkroom-controls {
+    width: 30%;
+}
+
+.editing-tools {
+    margin-bottom: 20px;
+}
+
+.editing-tools label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.additional-controls {
+    margin-top: 20px;
+}
+
+.preview-panel {
+    width: 65%;
+}
+
+.preview-panel img {
+    max-width: 100%;
+    max-height: 100%
+    height: auto;
+    border: 2px solid #333;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+
+/* Safelight effect styles */
+.safelight-on {
+    color: #ff3333; /* Safelight color */
+    background-color: #111; /* Dark background color */
+}
+
+/* Additional CSS styles */
+header, main, footer {
+    transition: color 0.7s, background-color 0.7s; /* Smooth transition for color changes */
+}
+
+.preview-panel img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #333;
+}
+
+
+.darkroom-container {
+    position: relative;
+}
+
+
+/* Style for the Save button */
+#save-btn {
+    background-color: #4CAF50; /* Green background */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px; /* Rounded corners */
+    font-family: 'Space Mono', monospace; /* Typewriter-style font */
+}
+
+/* Style for the Reset button */
+#reset-btn {
+    background-color: #f44336; /* Red background */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px; /* Rounded corners */
+    font-family: 'Space Mono', monospace; /* Typewriter-style font */
+}
+
+/* Style for other buttons (e.g., Toggle Safelight) */
+.darkroom-controls button {
+    background-color: #333; /* Dark background */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px; /* Rounded corners */
+    font-family: 'Space Mono', monospace; /* Typewriter-style font */
+}
+
+/* Style for the custom file upload button */
+.custom-file-upload {
+    background-color: #333; /* Dark background */
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 8px; /* Rounded corners */
+    font-family: 'Space Mono', monospace; /* Typewriter-style font */
+}
+
+/* Hide the default file input */
+#image-upload {
+    display: none;
+}
+
+input[type="range"] {
+  width: 350px;
+  margin: 0;
+}
+datalist {
+  display: flex;
+  justify-content: space-between;
+  writing-mode: horizontal-tb;
+  width: 350px;
+}
+/* Adjust font size for datalist options */
+datalist option {
+  font-size: calc(100% - 3px); /* Reduce font size by 2 units */
+}
